@@ -7,7 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class DashboardPage extends StatelessWidget {
   final DashboardController dashboardController = Get.put(DashboardController());
   final User? user = FirebaseAuth.instance.currentUser;
-  final TextEditingController _urlController = TextEditingController();
+
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +86,7 @@ class DashboardPage extends StatelessWidget {
 
   Widget buildUrlTextField() {
     return TextField(
-      controller: _urlController,
+      controller: dashboardController.urlController,
       decoration: InputDecoration(
         hintText: 'Paste URL here...',
         border: OutlineInputBorder(),
