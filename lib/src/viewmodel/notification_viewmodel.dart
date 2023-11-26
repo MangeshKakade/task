@@ -27,13 +27,13 @@ class NotificationViewModel {
     NotificationDetails(android: androidPlatformChannelSpecifics);
     await notificationsPlugin.show(
       0,
-      data.title, // Use the provided title from NotificationData
-      data.body, // Use the provided body from NotificationData
+      data.title,
+      data.body,
       platformChannelSpecifics,
     );
   }
 
   Future<void> cancelNotification() async {
-    await notificationsPlugin.cancel(0); // Cancels the scheduled notification
+    await notificationsPlugin.cancel(0);
   }
 }

@@ -15,16 +15,16 @@ class RegisterController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    _notificationViewModel = NotificationViewModel(); // Initialize the ViewModel
-    _notificationViewModel.initNotifications(); // Initialize notifications
-    _startNotificationTimer(); // Start the notification timer
+    _notificationViewModel = NotificationViewModel();
+    _notificationViewModel.initNotifications();
+    _startNotificationTimer();
   }
 
 
   void _startNotificationTimer() {
     const fiveSeconds = Duration(seconds: 5);
 
-    _notificationTimer?.cancel(); // Cancel existing timer if any
+    _notificationTimer?.cancel();
 
     _notificationTimer = Timer.periodic(fiveSeconds, (timer) {
       if (!_appInForeground) {

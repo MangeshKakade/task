@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:intl_phone_field/intl_phone_field.dart';
-import 'package:lottie/lottie.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import '../controller/register_controller.dart';
