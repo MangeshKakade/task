@@ -20,7 +20,6 @@ class RegisterController extends GetxController with WidgetsBindingObserver {
     _notificationViewModel.initNotifications();
     _startNotificationTimer();
 
-    // Add this line to register the observer
     WidgetsBinding.instance?.addObserver(this);
   }
 
